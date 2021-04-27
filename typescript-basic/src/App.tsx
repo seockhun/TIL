@@ -1,8 +1,10 @@
 import React from "react";
 // import Counter from "./components/Counter";
 // import MyForm from "./components/MyForm";
-import ReducerSample from "./components/ReducerSample";
-import { SampleProvider } from "./components/SampleContext";
+// import ReducerSample from "./components/ReducerSample";
+// import { SampleProvider } from "./components/SampleContext";
+import InfiniteScroll from "./components/InfiniteScroll";
+
 
 const App: React.FC = () => {
 
@@ -10,13 +12,7 @@ const App: React.FC = () => {
   //   console.log(form);
   // };
   return (
-    // <>
-    //   <MyForm onSubmit={onSubmit} />
-    //   <Counter />
-    // </>
-    <SampleProvider>
-      <ReducerSample />
-    </SampleProvider>
+    <InfiniteScroll />
   )
 }
 
